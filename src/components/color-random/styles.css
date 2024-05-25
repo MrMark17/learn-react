@@ -1,0 +1,32 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.1s ease;
+}
+
+.btn-wrapper {
+  padding: 1rem;
+}
+
+.btn-wrapper button {
+  margin: 0 1rem;
+  width: 150px;
+  background-color: #04f404;
+  padding: 0.5rem 0;
+  font-weight: 800;
+}
+.btn-wrapper button:hover {
+  background-color: #fd776c;
+}
+
+.text-wrapper {
+  flex-grow: 1;
+  width: 100%;
+  color: white;
+  align-content: center;
+  text-align: center;
+  font-size: 80px;
+}

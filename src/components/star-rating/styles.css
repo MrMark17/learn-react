@@ -1,0 +1,15 @@
+.star-rating {
+  height: 100vh;
+  text-align: center;
+  align-content: center;
+  background: #000;
+}
+
+.active {
+  color: #ffe470;
+  filter: drop-shadow(0px 0px 20px rgba(231, 235, 1, 0.747));
+}
+
+.inactive {
+  color: #868786;
+}

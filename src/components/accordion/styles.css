@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper button {
+  margin-bottom: 20px;
+  background-color: #f8d933;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.wrapper button:hover {
+  background-color: #40383f;
+  color: #f8d933;
+}
+
+.accordion {
+  border-radius: 20px;
+  overflow: hidden;
+  color: #40383f;
+}
+
+.item {
+  width: 350px;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f8d933;
+  cursor: pointer;
+}
+
+.title span {
+  padding: 0 1rem;
+}
+
+.answer {
+  padding: 1rem;
+  background: #fef4ce;
+}
+
+p {
+  line-height: 150%;
+}

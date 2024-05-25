@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.lmd-container {
+  width: 100vw;
+  height: 100vh;
+  background: lime;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.lmd-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: whitesmoke;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+.lmd-card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lmd-card-container {
+  height: 350px;
+  width: 280px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.lmd-head {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.lmd-head img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lmd-body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+  line-height: 150%;
+}
+
+.lmd-body p {
+  font-size: small;
+}
+
+.lmd-btn-wrapper {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lmd-btn-wrapper button {
+  margin: 1rem 0;
+  background-color: crimson;
+  color: white;
+  padding: 0.8rem 0;
+  width: 150px;
+  border: none;
+  border-radius: 4px;
+}
+
+.lmd-btn-wrapper button:disabled {
+  background-color: gray;
+}
+
+.loader {
+  width: 40px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, #ed303c 94%, #0000), radial-gradient(farthest-side, #3b8183 94%, #0000), radial-gradient(farthest-side, #fad089 94%, #0000), radial-gradient(farthest-side, #ff9c5b 94%, #0000), #ed303c;
+  background-size: 105% 105%;
+  background-repeat: no-repeat;
+  animation: l5 2s infinite;
+}
+@keyframes l5 {
+  0% {
+    background-position: 50% -50px, -40px 50%, 50% calc(100% + 50px), calc(100% + 50px) 50%;
+  }
+  20%,
+  25% {
+    background-position: 50% -50px, -50px 50%, 50% calc(100% + 50px), 50% 50%;
+  }
+  45%,
+  50% {
+    background-position: 50% -50px, -50px 50%, 50% 50%, 50% 50%;
+  }
+  75%,
+  75% {
+    background-position: 50% -50px, 50% 50%, 50% 50%, 50% 50%;
+  }
+  95%,
+  100% {
+    background-position: 50% 50%, 50% 50%, 50% 50%, 50% 50%;
+  }
+}
