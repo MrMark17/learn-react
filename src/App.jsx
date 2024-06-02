@@ -3,8 +3,9 @@
 // import StarRating from "./components/star-rating";
 // import ImageSlider from "./components/image-slider";
 // import LoadMoreData from "./components/load-more-data";
-import TreeView from "./components/tree-view";
-import menus from "./components/tree-view/data.js";
+// import TreeView from "./components/tree-view";
+// import menus from "./components/tree-view/data.js";
+import QrCodeGenerator from "./components/qr-code-generator";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       {/* <StarRating noOfStars={10} /> */}
       {/* <ImageSlider url={"https://picsum.photos/v2/list"} page={5} limit={10} /> */}
       {/* <LoadMoreData /> */}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
+      <QrCodeGenerator />
     </>
   );
 }
