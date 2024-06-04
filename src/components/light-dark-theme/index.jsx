@@ -2,9 +2,16 @@ import useLocalStorage from "./useLocalStorage";
 
 export default function LightDarkTheme() {
   const [theme, setTheme] = useLocalStorage("theme", "light");
+
+  function handleSwitchBtn() {
+    setTheme(theme === "light" ? "dark" : "light");
+  }
   return (
-    <div>
-      <h1>Light Dark Theme</h1>
+    <div className="light-dark-mode" data-theme={theme}>
+      <div className="container">
+        <h1>Light Dark Theme</h1>
+        <button onClick={handleSwitchBtn}>Switch Theme</button>
+      </div>
     </div>
   );
 }
