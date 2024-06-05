@@ -1,0 +1,17 @@
+:root{
+    --bg-color : white;
+}
+[data-theme="dark"]{
+    --bg-color: black;
+}
+.light-dark-mode{
+    background-color: var(--bg-color);
+    transition: all .3s ease-in-out;
+}
+.container{
+    margin-inline: auto;
+    height: 100vh;
+    text-align: center;
+    width: fit-content;
+    align-content: center;
+}
